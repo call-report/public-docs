@@ -1,0 +1,867 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://call.report/datasources/banktimeseries/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Bank Time Series Regulatory Data - Call.Report: A Resource for Bank Regulatory Analysis</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ab47bd">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Oxygen";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="purple" data-md-color-accent="blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bank-time-series-regulatory-data" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Call.Report: A Resource for Bank Regulatory Analysis" class="md-header__button md-logo" aria-label="Call.Report: A Resource for Bank Regulatory Analysis" data-md-component="logo">
+      
+  <img src="../../assets/images/call_report_icon_v1.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Call.Report: A Resource for Bank Regulatory Analysis
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bank Time Series Regulatory Data
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Call.Report: A Resource for Bank Regulatory Analysis" class="md-nav__button md-logo" aria-label="Call.Report: A Resource for Bank Regulatory Analysis" data-md-component="logo">
+      
+  <img src="../../assets/images/call_report_icon_v1.png" alt="logo">
+
+    </a>
+    Call.Report: A Resource for Bank Regulatory Analysis
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code/" class="md-nav__link">
+        Code Library
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Data Sources
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Data Sources" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Data Sources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Bank Time Series Regulatory Data
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Bank Time Series Regulatory Data
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    About
+  </a>
+  
+    <nav class="md-nav" aria-label="About">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-series-frequency" class="md-nav__link">
+    Time Series Frequency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publishing-frequency" class="md-nav__link">
+    Publishing frequency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-fields-and-data-dictionaries" class="md-nav__link">
+    Data Fields and Data Dictionaries
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#institution-identifiers" class="md-nav__link">
+    Institution Identifiers
+  </a>
+  
+    <nav class="md-nav" aria-label="Institution Identifiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#federal-reserve-and-ffiec-institution-identifiers" class="md-nav__link">
+    Federal Reserve and FFIEC Institution Identifiers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matching-rssd-identifiers-to-institution-names" class="md-nav__link">
+    Matching RSSD Identifiers to Institution Names
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taxonomies" class="md-nav__link">
+    Taxonomies
+  </a>
+  
+    <nav class="md-nav" aria-label="Taxonomies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#details" class="md-nav__link">
+    Details
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-locations" class="md-nav__link">
+    Download Locations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    Sources
+  </a>
+  
+    <nav class="md-nav" aria-label="Sources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-series-2001-present" class="md-nav__link">
+    Time Series 2001 - present
+  </a>
+  
+    <nav class="md-nav" aria-label="Time Series 2001 - present">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bulk-data-downloads" class="md-nav__link">
+    Bulk Data Downloads
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webservice-access" class="md-nav__link">
+    Webservice Access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timeseries-1978-2010" class="md-nav__link">
+    Timeseries 1978 - 2010
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releasenotes/" class="md-nav__link">
+        Release Notes
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    About
+  </a>
+  
+    <nav class="md-nav" aria-label="About">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-series-frequency" class="md-nav__link">
+    Time Series Frequency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publishing-frequency" class="md-nav__link">
+    Publishing frequency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-fields-and-data-dictionaries" class="md-nav__link">
+    Data Fields and Data Dictionaries
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#institution-identifiers" class="md-nav__link">
+    Institution Identifiers
+  </a>
+  
+    <nav class="md-nav" aria-label="Institution Identifiers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#federal-reserve-and-ffiec-institution-identifiers" class="md-nav__link">
+    Federal Reserve and FFIEC Institution Identifiers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matching-rssd-identifiers-to-institution-names" class="md-nav__link">
+    Matching RSSD Identifiers to Institution Names
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taxonomies" class="md-nav__link">
+    Taxonomies
+  </a>
+  
+    <nav class="md-nav" aria-label="Taxonomies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#details" class="md-nav__link">
+    Details
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#download-locations" class="md-nav__link">
+    Download Locations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    Sources
+  </a>
+  
+    <nav class="md-nav" aria-label="Sources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-series-2001-present" class="md-nav__link">
+    Time Series 2001 - present
+  </a>
+  
+    <nav class="md-nav" aria-label="Time Series 2001 - present">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bulk-data-downloads" class="md-nav__link">
+    Bulk Data Downloads
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webservice-access" class="md-nav__link">
+    Webservice Access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timeseries-1978-2010" class="md-nav__link">
+    Timeseries 1978 - 2010
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="bank-time-series-regulatory-data">Bank Time Series Regulatory Data</h1>
+<h2 id="about">About</h2>
+<h3 id="time-series-frequency">Time Series Frequency</h3>
+<p>Most all public bank regulatory data is time series data with a quarterly frequency. Some data, particularly for smaller financial institutions' data is semi-annual. </p>
+<h3 id="publishing-frequency">Publishing frequency</h3>
+<p>Regulatory agencies receive data on a rolling basis. Bulk data downloads are updated approximately monthly, while "webservice" feeds are updated soon after bank regulatory filings are submitted and validated.</p>
+<h3 id="data-fields-and-data-dictionaries">Data Fields and Data Dictionaries</h3>
+<p>Time series are published by field name (an "MDRM"), the ID of the reporting institution, and the reporting date (typically quarterly). </p>
+<p>The data release date is not included in the datasets themselves, but can be inferred from the data publication data.</p>
+<p>The data dictionaries describing MDRM fields is available at: <a href="https://www.federalreserve.gov/apps/mdrm/pdf/MDRM.zip">https://www.federalreserve.gov/apps/mdrm/pdf/MDRM.zip</a>, and is updated daily.</p>
+<h2 id="institution-identifiers">Institution Identifiers</h2>
+<h3 id="overview">Overview</h3>
+<h4 id="federal-reserve-and-ffiec-institution-identifiers">Federal Reserve and FFIEC Institution Identifiers</h4>
+<p>Federal Reserve institution identifiers are known as "RSSD" Ids. Bank regulatory data referenced on this page uses these RSSDs as the primary identifiers for financial institutions.</p>
+<h4 id="matching-rssd-identifiers-to-institution-names">Matching RSSD Identifiers to Institution Names</h4>
+<p>TBD</p>
+<h2 id="taxonomies">Taxonomies</h2>
+<p>"CDR Taxonomies," also known as "Call Report Taxonomies," represent the relationship of data points within bank regulatory data among each other.</p>
+<h3 id="details">Details</h3>
+<p>As noted earlier, bank regulatory time series data points are characterized by:</p>
+<ul>
+<li>The ID of the reporting institution (RSSD)</li>
+<li>The time period represented by the data point</li>
+<li>The data series reported (MDRM)</li>
+<li>The release date of the data</li>
+</ul>
+<p>Within these dimensions, for each reporting quarter, taxonomies are published by the FFIEC that indicate the "Schedule", "Section", "Line", and in some cases, "Column" of the data.</p>
+<p>These hierarchical categories facilitate an analysts' understanding of the financial condition of an organization.</p>
+<p>For example, in the FFIEC 031 report:</p>
+<pre><code>Schedule: RC-B (Report of Condition - Part B - Securities)
+    Line: 1
+        Column C: The Amortized Cost of Available-for Sale Treasury Securities (MDRM: RCFD1286)
+        Column D: The Fair Value of Available-for-Sale Treasury Securities (MDRM: RCFD1287)
+
+</code></pre>
+<p>Current and historical forms may be downloaded from the FFIEC:
+- <a href="https://www.ffiec.gov/forms031.htm">FFIEC 031</a>: Consolidated Reports of Condition and Income for a Bank with Domestic and Foreign Offices
+- <a href="https://www.ffiec.gov/forms041.htm">FFIEC 041</a>: Consolidated Reports of Condition and Income for a Bank with Domestic Offices Only<br />
+- <a href="https://www.ffiec.gov/forms051.htm">FFIEC 051</a>: Consolidated Reports of Condition and Income for a Bank with Domestic Offices Only and Total Assets Less than $5 Billion</p>
+<p>Note that a data series may be shared by one or more of the above reports.</p>
+<h3 id="download-locations">Download Locations</h3>
+<p>While taxonomies may be reviewed from the PDFs above, the PDFs do not provide a machine data format for purposes of programmatic data analysis.</p>
+<p>Machine-data versionf of the taxonomies may be downloaded from <a href="https://cdr.ffiec.gov/public/DownloadTaxonomy.aspx">https://cdr.ffiec.gov/public/DownloadTaxonomy.aspx</a></p>
+<p>Taxonomies are provided in XBRL format, which typically requires commercial software for processing. In lieu of this commercial software, a Python-based tool for converting CDR taxonomies to JSON format is available <a href="https://github.com/call-report/public-python-scripts/cdr-taxonomy-processor">here</a>.</p>
+<h2 id="sources">Sources</h2>
+<h3 id="time-series-2001-present">Time Series 2001 - present</h3>
+<h4 id="bulk-data-downloads">Bulk Data Downloads</h4>
+<ul>
+<li>
+<p>Historical data is provided from 2001 until the present day by the Federal Financial Institutions Examination Council (FFIEC).</p>
+</li>
+<li>
+<p>Bulk data downloads are generated from the rolling filings on monthly basis, typically released mid-month. </p>
+</li>
+<li>
+<p>Data is provided in XBRL and CSV format.</p>
+</li>
+<li>
+<p>The permanent lnk to download bulk regulatory data is available at <a href="https://cdr.ffiec.gov/public/PWS/DownloadBulkData.aspx">https://cdr.ffiec.gov/public/PWS/DownloadBulkData.aspx</a></p>
+</li>
+</ul>
+<h3 id="webservice-access">Webservice Access</h3>
+<p>TBD</p>
+<h3 id="timeseries-1978-2010">Timeseries 1978 - 2010</h3>
+<ul>
+<li>Historical bank regulatory data is provided by the Federal Reserve Bank of Chicago (the "Chicago" dataset) at two links: </li>
+<li>
+<p>1976-2000: <a href="https://www.chicagofed.org/banking/financial-institution-reports/commercial-bank-data-complete-1976-2000">https://www.chicagofed.org/banking/financial-institution-reports/commercial-bank-data-complete-1976-2000</a></p>
+</li>
+<li>
+<p>2000-2010: <a href="https://www.chicagofed.org/banking/financial-institution-reports/commercial-bank-data-complete-2001-2010">https://www.chicagofed.org/banking/financial-institution-reports/commercial-bank-data-complete-2001-2010</a></p>
+</li>
+<li>
+<p>Note that the "Chicago" dataset overlaps with the FFIEC dataset; if combining the two datasets, for overlapping data points, to utilize the FFIEC dataset in lieu of the Chicago dataset.</p>
+</li>
+<li>Data is provided in SAS XPORT format. (Python import script is TBD.)</li>
+</ul>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Overview
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../releasenotes/" class="md-footer__link md-footer__link--next" aria-label="Next: Release Notes" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Release Notes
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <!-- Copyright and theme information -->
+<div class="md-copyright">
+    
+      <div class="md-copyright__highlight">
+        Copyright &copy; 2022 Civic Objective Solutions LLC
+        <a href="license">
+        <span style="margin-left:1em;">License</span>
+        </a>
+      </div>
+      
+    
+    
+      Made with
+      <a
+        href="https://squidfunk.github.io/mkdocs-material/"
+        target="_blank" rel="noopener"
+      >
+        Material for MkDocs
+      </a>
+    
+  </div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/call-report" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
