@@ -48,11 +48,15 @@ All code, info, and resources on this site are licensed under the MIT license. I
 
 ### Do you offer support, and/or where can I ask questions?
 
-- Community support for utilities and other related code is available under the "Issues" section of the repository on which the respective code is hosted.
+Call.Report provides community subject matter support via [GitHub](https://github.com/call-report/support/issues). Issues submitted to this page will be reviewed periodically.
 
-    - For example, issues may be reported on these documents via the github.com/call-report/public-docs/issues page.
+- For support specific to the `scripts-toolkit`, please submit an issue to the [https://github.com/call-report/scripts-toolkit/issues](GitHub repo)
 
-For inquiries regarding professional services, send an email to [michael@call.report](mailto:michael@call.report)
+- For questions or support specific to the content of the call.report site, please submit an issue to the [https://github.com/call-report/public-docs/issues](GitHub repo)
+
+- For priority or time-sensitive support, professional services are available (see below).
+
+- For inquiries regarding professional services, send an email to [michael@call.report](mailto:michael@call.report)
 
 
 ### How do I make a correction, edit something, or have a question about something on this site?

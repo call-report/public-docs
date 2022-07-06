@@ -12,11 +12,18 @@ Included on this site are tools, code, explanations, and other resources develop
 
 ## Technical and Subject Matter Support
 
-Technical and subject matter support is provided via Community Support via the Site's Github page.
+Call.Report provides community subject matter support via [GitHub](https://github.com/call-report/support/issues). Issues submitted to this page will be reviewed periodically.
+
+- For support specific to the `scripts-toolkit`, please submit an issue to the [https://github.com/call-report/scripts-toolkit/issues](GitHub repo)
+
+- For questions or support specific to the content of the call.report site, please submit an issue to the [https://github.com/call-report/public-docs/issues](GitHub repo)
+
+- For priority or time-sensitive support, professional services are available (see below).
+
 
 ### Professional Services
 
-For questions or inquiries regarding professional services, email [info@civicobj.com](mailto:info@civicobj.com).
+For questions or inquiries regarding professional services, email [michael@call.report](michael@call.report).
 
 ## Disclaimers
 
