@@ -1,0 +1,37 @@
+site_name: "Call.Report: A Resource for Bank Regulatory Analysis"
+site_url: https://call.report/
+theme:
+    name: material
+    include_sidebar: false
+    font:
+      text: Oxygen
+    features:
+
+      - navigation.tabs.sticky
+    logo: assets/images/call_report_icon_v1.png 
+    palette:
+      primary: purple
+      accent: blue
+    custom_dir: docs/overrides
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+    - Home: 'index.md'
+    - About: 'about.md'
+    - License: 'license.md'
+    - Code Library: 'code.md'
+    # - APIs: 'apis.md'
+    # - Data Access Libraries: 'libraries.md'
+    # # - Update Frequencies: 'dataupdates.md'
+    - Data Sources:
+        - Overview: 'datasources.md'
+        - Bank Time Series Regulatory Data: 'datasources/banktimeseries.md'
+    - Release Notes: 'releasenotes.md'
+
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/call-report
+
+copyright: Copyright &copy; 2022 Civic Objective Solutions LLC
