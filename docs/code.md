@@ -5,3 +5,6 @@ Libraries and utilities for downloading, extracting, and processing regulatory d
 ### Utilities
 
 - [__CDR Taxonomy Processor__](https://github.com/call-report/scripts-toolkit/tree/main/python/cdr_taxonomy_xbrl_to_json): Converts the XBRL-based taxonomy files into a hierarchial JSON format.
+
+
+- [__MDRM Data Dictionary Collector__](https://github.com/call-report/scripts-toolkit/tree/main/python/mdrm_data_dictionary_collect_process): Downloads the latest data dictionary form the Federal Reserve and processes the file into JSON format.

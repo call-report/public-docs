@@ -16,7 +16,9 @@ Time series are published by field name (an "MDRM"), the ID of the reporting ins
 
 The data release date is not included in the datasets themselves, but can be inferred from the data publication data.
 
-The data dictionaries describing MDRM fields is available at: [https://www.federalreserve.gov/apps/mdrm/pdf/MDRM.zip](https://www.federalreserve.gov/apps/mdrm/pdf/MDRM.zip), and is updated daily.
+The data dictionaries describing MDRM fields is available at: [https://www.federalreserve.gov/apps/mdrm/pdf/MDRM.zip](https://www.federalreserve.gov/apps/mdrm/pdf/MDRM.zip), and are updated daily.
+
+Scripts to download and transform the MDRM data dictionaries are available in the [Code Library](/code)
 
 ## Institution Identifiers
 
