@@ -34,5 +34,8 @@ extra:
   social:
     - icon: fontawesome/brands/github 
       link: https://github.com/call-report
-
+  analytics:
+    provider: google
+    property: G-YLGYYYELXL
+    
 copyright: Copyright &copy; 2022 Civic Objective Solutions LLC

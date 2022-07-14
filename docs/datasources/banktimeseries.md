@@ -92,13 +92,25 @@ Taxonomies are provided in XBRL format, which typically requires commercial soft
 
 TBD
 
-### Timeseries 1978 - 2010
+### Historical Timeseries 1978 - 2010 (Federal Reserve Bank of Chicago)
 
 - Historical bank regulatory data is provided by the Federal Reserve Bank of Chicago (the "Chicago" dataset) at two links: 
   - 1976-2000: [https://www.chicagofed.org/banking/financial-institution-reports/commercial-bank-data-complete-1976-2000](https://www.chicagofed.org/banking/financial-institution-reports/commercial-bank-data-complete-1976-2000)
 
   - 2000-2010: [https://www.chicagofed.org/banking/financial-institution-reports/commercial-bank-data-complete-2001-2010](https://www.chicagofed.org/banking/financial-institution-reports/commercial-bank-data-complete-2001-2010)
 
+#### Importing and Processing Data Series
 
-- Note that the "Chicago" dataset overlaps with the FFIEC dataset; if combining the two datasets, for overlapping data points, to utilize the FFIEC dataset in lieu of the Chicago dataset.
-- Data is provided in SAS XPORT format. (Python import script is TBD.)
+These time series data are provided as zipped SAS XPORT files; SAS or the python library `pyreadstat` may be utilized to import the data.
+
+##### scripts-toolkit
+A python-based tool, `sas_xport_converter`, is available in the `scripts-toolkit` repo at [https://github.com/call-report/scripts-toolkit](https://github.com/call-report/scripts-toolkit) to ingest the source files, re-encode character data to UTF-8, identify field types, and normalize the data for purposes of further analysis.
+
+- This tool will eventually be incorporated into the `data-converter` service.
+
+#### Integrating the "Chicago" dataset with the "Bulk Data Downloads" dataset
+
+- The historical Chicago dataset overlaps with the FFIEC "bulk" dataset. The `sas_xport_converter` tool normalizes the historical dataset to make easier the process of integrating the datasets together. 
+
+- Note that the Chicago dataset contains institution structural data that are not present in the "bulk" dataset.
+  - Both the Chicago dataset and the bulk dataset may be joined with the FFIEC Attributes dataset. The attributes data includes the structural data that would otherwise be included in the Chicago data.
