@@ -28,6 +28,7 @@ nav:
     - Data Sources:
         - Overview: 'datasources.md'
         - Bank Time Series Regulatory Data: 'datasources/banktimeseries.md'
+        - Attributes Data: `datasources/attributes.md`
     - Release Notes: 'releasenotes.md'
 
 extra:
