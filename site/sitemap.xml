@@ -2,52 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://call.report/</loc>
-         <lastmod>2022-07-14</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://call.report/about/</loc>
-         <lastmod>2022-07-14</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://call.report/apis/</loc>
-         <lastmod>2022-07-14</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://call.report/code/</loc>
-         <lastmod>2022-07-14</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://call.report/datasources/</loc>
-         <lastmod>2022-07-14</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://call.report/dataupdates/</loc>
-         <lastmod>2022-07-14</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://call.report/libraries/</loc>
-         <lastmod>2022-07-14</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://call.report/license/</loc>
-         <lastmod>2022-07-14</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://call.report/releasenotes/</loc>
-         <lastmod>2022-07-14</lastmod>
+         <lastmod>2022-07-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://call.report/datasources/attributes/</loc>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://call.report/datasources/banktimeseries/</loc>
-         <lastmod>2022-07-14</lastmod>
+         <lastmod>2022-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
