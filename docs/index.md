@@ -14,9 +14,9 @@ Included on this site are tools, code, explanations, and other resources develop
 
 Call.Report provides community subject matter support via [GitHub](https://github.com/call-report/support/issues). Issues submitted to this page will be reviewed periodically.
 
-- For support specific to the `scripts-toolkit`, please submit an issue to the [https://github.com/call-report/scripts-toolkit/issues](GitHub repo)
+- For support specific to the `scripts-toolkit`, please submit an issue to the [GitHub repo](https://github.com/call-report/scripts-toolkit/issues)
 
-- For questions or support specific to the content of the call.report site, please submit an issue to the [https://github.com/call-report/public-docs/issues](GitHub repo)
+- For questions or support specific to the content of the call.report site, please submit an issue to the [GitHub repo](https://github.com/call-report/public-docs/issues)
 
 - For priority or time-sensitive support, professional services are available (see below).
 

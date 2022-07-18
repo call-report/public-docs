@@ -471,9 +471,42 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#timeseries-1978-2010" class="md-nav__link">
-    Timeseries 1978 - 2010
+  <a href="#historical-timeseries-1978-2010-federal-reserve-bank-of-chicago" class="md-nav__link">
+    Historical Timeseries 1978 - 2010 (Federal Reserve Bank of Chicago)
   </a>
+  
+    <nav class="md-nav" aria-label="Historical Timeseries 1978 - 2010 (Federal Reserve Bank of Chicago)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importing-and-processing-data-series" class="md-nav__link">
+    Importing and Processing Data Series
+  </a>
+  
+    <nav class="md-nav" aria-label="Importing and Processing Data Series">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scripts-toolkit" class="md-nav__link">
+    scripts-toolkit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrating-the-chicago-dataset-with-the-bulk-data-downloads-dataset" class="md-nav__link">
+    Integrating the "Chicago" dataset with the "Bulk Data Downloads" dataset
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -675,9 +708,42 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#timeseries-1978-2010" class="md-nav__link">
-    Timeseries 1978 - 2010
+  <a href="#historical-timeseries-1978-2010-federal-reserve-bank-of-chicago" class="md-nav__link">
+    Historical Timeseries 1978 - 2010 (Federal Reserve Bank of Chicago)
   </a>
+  
+    <nav class="md-nav" aria-label="Historical Timeseries 1978 - 2010 (Federal Reserve Bank of Chicago)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importing-and-processing-data-series" class="md-nav__link">
+    Importing and Processing Data Series
+  </a>
+  
+    <nav class="md-nav" aria-label="Importing and Processing Data Series">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scripts-toolkit" class="md-nav__link">
+    scripts-toolkit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrating-the-chicago-dataset-with-the-bulk-data-downloads-dataset" class="md-nav__link">
+    Integrating the "Chicago" dataset with the "Bulk Data Downloads" dataset
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -764,7 +830,7 @@
 </ul>
 <h3 id="webservice-access">Webservice Access</h3>
 <p>TBD</p>
-<h3 id="timeseries-1978-2010">Timeseries 1978 - 2010</h3>
+<h3 id="historical-timeseries-1978-2010-federal-reserve-bank-of-chicago">Historical Timeseries 1978 - 2010 (Federal Reserve Bank of Chicago)</h3>
 <ul>
 <li>Historical bank regulatory data is provided by the Federal Reserve Bank of Chicago (the "Chicago" dataset) at two links: </li>
 <li>
@@ -773,10 +839,23 @@
 <li>
 <p>2000-2010: <a href="https://www.chicagofed.org/banking/financial-institution-reports/commercial-bank-data-complete-2001-2010">https://www.chicagofed.org/banking/financial-institution-reports/commercial-bank-data-complete-2001-2010</a></p>
 </li>
+</ul>
+<h4 id="importing-and-processing-data-series">Importing and Processing Data Series</h4>
+<p>These time series data are provided as zipped SAS XPORT files; SAS or the python library <code>pyreadstat</code> may be utilized to import the data.</p>
+<h5 id="scripts-toolkit">scripts-toolkit</h5>
+<p>A python-based tool, <code>sas_xport_converter</code>, is available in the <code>scripts-toolkit</code> repo at <a href="https://github.com/call-report/scripts-toolkit">https://github.com/call-report/scripts-toolkit</a> to ingest the source files, re-encode character data to UTF-8, identify field types, and normalize the data for purposes of further analysis.</p>
+<ul>
+<li>This tool will eventually be incorporated into the <code>data-converter</code> service.</li>
+</ul>
+<h4 id="integrating-the-chicago-dataset-with-the-bulk-data-downloads-dataset">Integrating the "Chicago" dataset with the "Bulk Data Downloads" dataset</h4>
+<ul>
 <li>
-<p>Note that the "Chicago" dataset overlaps with the FFIEC dataset; if combining the two datasets, for overlapping data points, to utilize the FFIEC dataset in lieu of the Chicago dataset.</p>
+<p>The historical Chicago dataset overlaps with the FFIEC "bulk" dataset. The <code>sas_xport_converter</code> tool normalizes the historical dataset to make easier the process of integrating the datasets together. </p>
 </li>
-<li>Data is provided in SAS XPORT format. (Python import script is TBD.)</li>
+<li>
+<p>Note that the Chicago dataset contains institution structural data that are not present in the "bulk" dataset.</p>
+</li>
+<li>Both the Chicago dataset and the bulk dataset may be joined with the FFIEC Attributes dataset. The attributes data includes the structural data that would otherwise be included in the Chicago data.</li>
 </ul>
 
               
