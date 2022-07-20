@@ -409,11 +409,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-acqusition-and-analysis" class="md-nav__link">
-    Data Acqusition and Analysis
+  <a href="#data-acquisition-and-analysis" class="md-nav__link">
+    Data Acquisition and Analysis
   </a>
   
-    <nav class="md-nav" aria-label="Data Acqusition and Analysis">
+    <nav class="md-nav" aria-label="Data Acquisition and Analysis">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -613,11 +613,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-acqusition-and-analysis" class="md-nav__link">
-    Data Acqusition and Analysis
+  <a href="#data-acquisition-and-analysis" class="md-nav__link">
+    Data Acquisition and Analysis
   </a>
   
-    <nav class="md-nav" aria-label="Data Acqusition and Analysis">
+    <nav class="md-nav" aria-label="Data Acquisition and Analysis">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -724,19 +724,19 @@
 <p>The RSSD assigned a bank branch, institution, or other organizational component remains the same throughout any merger or acquisition transaction, as long as the respective entity is a "survivor" of the transaction.</p>
 <p>Once an RSSD is utilized for an entity, the RSSD is not reused.</p>
 <h3 id="relationship-to-other-regulators-identification-schemes">Relationship to Other Regulators Identification Schemes</h3>
-<p>While the RSSD is the most prevelant and comprehsive identification scheme (with repect to the count and breadth of institutions covered), other Federal regulatory agencies use other institution identification schemes:</p>
+<p>While the RSSD is the most prevalent and comprehensive identification scheme (with respect to the count and breadth of institutions covered), other Federal regulatory agencies use other institution identification schemes:</p>
 <h4 id="federal-deposit-insurance-corporation-fdic">Federal Deposit Insurance Corporation (FDIC)</h4>
 <p>For depository institutions (banks), the FDIC uses "certificate" numbers; this number represents the number assigned to the deposit insurance certificate granted to the bank. For all financial data reported by the FDIC, this ID, indicated at the <code>CERT</code> field, is the primary institution ID.</p>
 <p>The Federal Reserve's attribute data does includes a crosswalk to the FDIC certificate number.</p>
 <h5 id="bank-branches">Bank Branches</h5>
 <p>For bank branches, the FDIC also assigns a <em>branch number</em>, whose value is a sequential integer, and a <em>UNINUM</em>, a unique integer number assigned to the branch by the FDIC.</p>
-<p>There is no publically available crosswalk between the FDIC branch <em>UNINUM</em> and the <em>RSSD</em> assigned by the Federal Reserve to the respective branch.</p>
+<p>There is no publicly available crosswalk between the FDIC branch <em>UNINUM</em> and the <em>RSSD</em> assigned by the Federal Reserve to the respective branch.</p>
 <h4 id="office-of-the-comptroller-of-the-currency-occ">Office of the Comptroller of the Currency (OCC)</h4>
 <p>The Office of the Comptroller of the Currency (OCC) also uses a separate ID numbering scheme, known as the <code>OCC ID</code>.</p>
-<h2 id="data-acqusition-and-analysis">Data Acqusition and Analysis</h2>
+<h2 id="data-acquisition-and-analysis">Data Acquisition and Analysis</h2>
 <h3 id="the-attributes-files">The <code>ATTRIBUTES</code> Files</h3>
 <p>The Federal Reserve tracks changes to the corporate structure of financial institutions, their branches, subsidiaries, related entities, and holding companies, ("entities") on a continuous basis in an internal transaction table known as the <code>ATTRIBUTES</code> record.</p>
-<p>Each row in this table indicates an initial or changed structural charactistic, such as (but not limited to):</p>
+<p>Each row in this table indicates an initial or changed structural characteristic, such as (but not limited to):</p>
 <ul>
 <li>The type and charter of the respective entity</li>
 <li>The termination date of a now-closed entity</li>
@@ -745,7 +745,7 @@
 </ul>
 <p>From their internal source data, the Federal Reserve publishes daily extracts at this <a href="https://www.ffiec.gov/npw/FinancialReport/DataDownload">link</a></p>
 <h4 id="data-dictionaries">Data Dictionaries</h4>
-<p>Data Dictionaries and other supporting resources are avialable on <a href="https://github.com/call-report/data-resources">github.com/call-report/data-resources</a></p>
+<p>Data Dictionaries and other supporting resources are available on <a href="https://github.com/call-report/data-resources">github.com/call-report/data-resources</a></p>
 <h4 id="analysis-note">Analysis Note</h4>
 <p>Note that the Federal Reserve does not publish the full record of the <code>ATTRIBUTES</code> file on its public website; this data is only available via a Freedom of Information Act (FOIA) request. </p>
 <p>Without the full record, an analyst cannot track the progression of changes and updates to an organization's attribute record - the daily extracts publicly provided by the Federal Reserve only indicate the last recorded set of attributed for the respective institution.</p>
@@ -759,7 +759,7 @@
 <p>Lists mergers and acquisitions of one financial institution to another, through providing the RSSD IDs of the survivor and non-acquired institution.</p>
 <p>This list of relationships (graph edges) can be utilized to construct a graph that represents each institutions' relationship to one another.</p>
 <h4 id="relationships">Relationships</h4>
-<p>Lists each entity's relationship to another, with repspect to if an institution is owned or owns another institution.</p>
+<p>Lists each entity's relationship to another, with respect to if an institution is owned or owns another institution.</p>
 <h5 id="important-note-when-analyzing-relationship-data">Important Note when Analyzing Relationship Data</h5>
 <p>Note that institutions may not 100% own other institutions; a child subsidiary of an institution may be owned by more than one parent entity.</p>
 

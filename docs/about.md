@@ -6,6 +6,10 @@ This site provides an open-source code and documentation resource on U.S. Bank a
 
 Documentation on Federal financial regulatory data is fragmented, sometimes out-of-date, and full of jargon and other technical terms. The resources on this site are intended to demystify the datasets, facilitate useful analysis of the underlying data, and provide software-based tools to assist the (extraction, translation, and loading) ETL process.
 
+## Github Repository
+
+Check out the [`call.report`](https://github.com/call-report) GitHub repo to checkout all code related to this site.
+
 ## Contact Information
 
 This site is owned by Civic Objective Solutions LLC, and edited by [Michael Handelman, CFA](https://mikeh.dev).

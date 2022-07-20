@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Mon Jul 18 13:26:50 2022
+# Make data base, printed on Wed Jul 20 15:47:47 2022
 
 # Variables
 
@@ -45,8 +45,6 @@ PATH = /Users/michael/opt/anaconda3/bin:/Users/michael/opt/anaconda3/condabin:/o
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-LaunchInstanceID = 7ACC3A96-1F6B-4954-AB8B-C1CF3415D320
-# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
@@ -73,7 +71,7 @@ HOME = /Users/michael
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/michael/Library/Application Support/Code/CachedData/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
+VSCODE_CODE_CACHE_PATH = /Users/michael/Library/Application Support/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
 # environment
 LOGNAME = michael
 # environment
@@ -84,6 +82,7 @@ CONDA_PROMPT_MODIFIER = (base)
 ZSH = /Users/michael/.oh-my-zsh
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+ 
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -112,13 +111,12 @@ CONDA_SHLVL = 1
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # default
 .VARIABLES := 
- 
 # environment
 TMPDIR = /var/folders/hl/9q3qlcv12qqbz952vftxxc8w0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/michael/Library/Application Support/Code/1.69.1-main.sock
+VSCODE_IPC_HOOK = /Users/michael/Library/Application Support/Code/1.69.2-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -128,7 +126,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.26684663.26684669
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.30225463.30225469
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -151,8 +149,6 @@ PAGER = less
 LC_ALL = C
 # environment
 CONDA_PYTHON_EXE = /Users/michael/opt/anaconda3/bin/python
-# environment
-SECURITYSESSIONID = 186b2
 # automatic
 ^F = $(notdir $^)
 # default
@@ -166,13 +162,13 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /Users/michael/opt/anaconda3
 # environment
-VSCODE_PID = 672
+VSCODE_PID = 4345
 # environment
 _CE_CONDA = 
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=78/1024=8%, Rehash=0, Collisions=2/102=2%
+# Load=76/1024=7%, Rehash=0, Collisions=2/100=2%
 
 # Pattern-specific Variable Values
 
@@ -241,6 +237,6 @@ run:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Jul 18 13:26:50 2022
+# Finished Make data base on Wed Jul 20 15:47:47 2022
 
  

@@ -18,7 +18,7 @@ Once an RSSD is utilized for an entity, the RSSD is not reused.
 
 ### Relationship to Other Regulators Identification Schemes
 
-While the RSSD is the most prevelant and comprehsive identification scheme (with repect to the count and breadth of institutions covered), other Federal regulatory agencies use other institution identification schemes:
+While the RSSD is the most prevalent and comprehensive identification scheme (with respect to the count and breadth of institutions covered), other Federal regulatory agencies use other institution identification schemes:
 
 #### Federal Deposit Insurance Corporation (FDIC)
 
@@ -30,20 +30,20 @@ The Federal Reserve's attribute data does includes a crosswalk to the FDIC certi
 
 For bank branches, the FDIC also assigns a _branch number_, whose value is a sequential integer, and a _UNINUM_, a unique integer number assigned to the branch by the FDIC.
 
-There is no publically available crosswalk between the FDIC branch _UNINUM_ and the _RSSD_ assigned by the Federal Reserve to the respective branch.
+There is no publicly available crosswalk between the FDIC branch _UNINUM_ and the _RSSD_ assigned by the Federal Reserve to the respective branch.
 
 #### Office of the Comptroller of the Currency (OCC)
 
 The Office of the Comptroller of the Currency (OCC) also uses a separate ID numbering scheme, known as the `OCC ID`.
 
-## Data Acqusition and Analysis
+## Data Acquisition and Analysis
 
 ### The `ATTRIBUTES` Files
 
 The Federal Reserve tracks changes to the corporate structure of financial institutions, their branches, subsidiaries, related entities, and holding companies, ("entities") on a continuous basis in an internal transaction table known as the `ATTRIBUTES` record.
 
 
-Each row in this table indicates an initial or changed structural charactistic, such as (but not limited to):
+Each row in this table indicates an initial or changed structural characteristic, such as (but not limited to):
 
 - The type and charter of the respective entity
 - The termination date of a now-closed entity
@@ -54,7 +54,7 @@ From their internal source data, the Federal Reserve publishes daily extracts at
 
 #### Data Dictionaries
 
-Data Dictionaries and other supporting resources are avialable on [github.com/call-report/data-resources](https://github.com/call-report/data-resources)
+Data Dictionaries and other supporting resources are available on [github.com/call-report/data-resources](https://github.com/call-report/data-resources)
 
 #### Analysis Note
 
@@ -82,7 +82,7 @@ This list of relationships (graph edges) can be utilized to construct a graph th
 
 #### Relationships
 
-Lists each entity's relationship to another, with repspect to if an institution is owned or owns another institution.
+Lists each entity's relationship to another, with respect to if an institution is owned or owns another institution.
 
 ##### Important Note when Analyzing Relationship Data
 

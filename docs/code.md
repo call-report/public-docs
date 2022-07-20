@@ -1,8 +1,8 @@
-## Utilities and Libraries
+# Utilities and Libraries
 
 Libraries and utilities for downloading, extracting, and processing regulatory data will be published on an ongoing basis on the [`call-report/scripts-toolkit`](https://github.com/call-report/scripts-toolkit) code repository.
 
-### Utilities
+## Utilities
 
 - [__CDR Taxonomy Processor__](https://github.com/call-report/scripts-toolkit/tree/main/python/cdr_taxonomy_xbrl_to_json): Converts the XBRL-based taxonomy files into a hierarchial JSON format.
 

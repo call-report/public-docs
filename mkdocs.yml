@@ -22,13 +22,14 @@ nav:
     - About: 'about.md'
     - License: 'license.md'
     - Code Library: 'code.md'
+    - Data Library: 'datalibrary.md'
     # - APIs: 'apis.md'
     # - Data Access Libraries: 'libraries.md'
     # # - Update Frequencies: 'dataupdates.md'
     - Data Sources:
-        - Overview: 'datasources.md'
         - Bank Time Series Regulatory Data: 'datasources/banktimeseries.md'
         - Attributes Data: 'datasources/attributes.md'
+        - Uniform Bank Performance Report (UBPR): 'datasources/ubpr.md'
     - Release Notes: 'releasenotes.md'
 
 extra:

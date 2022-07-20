@@ -69,7 +69,7 @@ Note that a data series may be shared by one or more of the above reports.
 
 While taxonomies may be reviewed from the PDFs above, the PDFs do not provide a machine data format for purposes of programmatic data analysis.
 
-Machine-data versionf of the taxonomies may be downloaded from [https://cdr.ffiec.gov/public/DownloadTaxonomy.aspx](https://cdr.ffiec.gov/public/DownloadTaxonomy.aspx)
+Machine-data version of the taxonomies may be downloaded from [https://cdr.ffiec.gov/public/DownloadTaxonomy.aspx](https://cdr.ffiec.gov/public/DownloadTaxonomy.aspx)
 
 Taxonomies are provided in XBRL format, which typically requires commercial software for processing. In lieu of this commercial software, a Python-based tool for converting CDR taxonomies to JSON format is available [here](https://github.com/call-report/public-python-scripts/cdr-taxonomy-processor).
 
