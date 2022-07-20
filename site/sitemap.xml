@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://call.report/datalibrary/</loc>
+         <lastmod>2022-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://call.report/datasources/</loc>
          <lastmod>2022-07-20</lastmod>
          <changefreq>daily</changefreq>

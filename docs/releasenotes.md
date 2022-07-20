@@ -17,3 +17,9 @@ Added repo and reference for the [Universal Data Collector](https://github.com/c
 ### Jul 18, 2022
 
 - Added section on attributes data
+
+### Jul 20, 2022
+
+- Fixed spelling errors
+- Added "data resource library" section
+- Added draft UBPR section
