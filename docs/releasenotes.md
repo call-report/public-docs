@@ -23,3 +23,8 @@ Added repo and reference for the [Universal Data Collector](https://github.com/c
 - Fixed spelling errors
 - Added "data resource library" section
 - Added draft UBPR section
+
+### Jul 27, 2022
+
+- Added the `ffiec-data-connect` package
+- Minor edits

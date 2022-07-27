@@ -6,11 +6,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
-make: *** No rule to make target `all'.  Stop.
 
-
-# Make data base, printed on Wed Jul 20 15:47:47 2022
+# Make data base, printed on Wed Jul 27 15:23:46 2022
 
 # Variables
 
@@ -45,11 +42,13 @@ PATH = /Users/michael/opt/anaconda3/bin:/Users/michael/opt/anaconda3/condabin:/o
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
+LaunchInstanceID = 240DB1A5-6F67-41D9-903D-7DC02EB7C824
+# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /var/folders/hl/9q3qlcv12qqbz952vftxxc8w0000gn/T//ssh-3iB5TrobNAx0/agent.1000
+SSH_AUTH_SOCK = /var/folders/hl/9q3qlcv12qqbz952vftxxc8w0000gn/T//ssh-DopnAvkpUgdc/agent.4499
 # automatic
 %F = $(notdir $%)
 # environment
@@ -59,7 +58,7 @@ PWD = /Users/michael/Development/call.report/public-docs
 # environment
 HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
-SSH_AGENT_PID = 1006
+SSH_AGENT_PID = 4517
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
@@ -82,7 +81,6 @@ CONDA_PROMPT_MODIFIER = (base)
 ZSH = /Users/michael/.oh-my-zsh
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
- 
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -149,6 +147,8 @@ PAGER = less
 LC_ALL = C
 # environment
 CONDA_PYTHON_EXE = /Users/michael/opt/anaconda3/bin/python
+# environment
+SECURITYSESSIONID = 186ae
 # automatic
 ^F = $(notdir $^)
 # default
@@ -162,13 +162,13 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /Users/michael/opt/anaconda3
 # environment
-VSCODE_PID = 4345
+VSCODE_PID = 3985
 # environment
 _CE_CONDA = 
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=76/1024=7%, Rehash=0, Collisions=2/100=2%
+# Load=78/1024=8%, Rehash=0, Collisions=2/102=2%
 
 # Pattern-specific Variable Values
 
@@ -176,7 +176,7 @@ LANG = C
 
 # Directories
 
-# . (device 16777232, inode 25816721): 9 files, no impossibilities.
+# . (device 16777230, inode 25816721): 9 files, no impossibilities.
 
 # 9 files, no impossibilities in 1 directories.
 
@@ -237,6 +237,8 @@ run:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Jul 20 15:47:47 2022
+# Finished Make data base on Wed Jul 27 15:23:46 2022
 
  
+make: *** No rule to make target `all'.  Stop.
+

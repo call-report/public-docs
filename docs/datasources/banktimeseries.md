@@ -4,11 +4,15 @@
 
 ### Time Series Frequency
 
-Most all public bank regulatory data is time series data with a quarterly frequency. Some data, particularly for smaller financial institutions' data is semi-annual. 
+Most all public bank regulatory data is time series data with a quarterly reporting frequency. Some data, particularly for smaller financial institutions' data is semi-annual. 
 
 ### Publishing frequency
 
-Regulatory agencies receive data on a rolling basis. Bulk data downloads are updated approximately monthly, while "webservice" feeds are updated soon after bank regulatory filings are submitted and validated.
+Regulatory agencies receive data on a rolling basis. 
+
+-  Bulk data downloads are updated approximately monthly
+
+-  "Webservice" feeds are updated soon after bank regulatory filings are submitted and validated. (A Python-based wrapper for these feeds is available at https://pypi.org/project/ffiec-data-connect)
 
 ### Data Fields and Data Dictionaries
 
