@@ -1,4 +1,4 @@
-site_name: "Call.Report: A Resource for Bank Regulatory Analysis"
+site_name: "Call.Report: A Resource for Bank and Holding Company Regulatory Data"
 site_url: https://call.report/
 theme:
     name: material
@@ -20,6 +20,7 @@ markdown_extensions:
 nav:
     - Home: 'index.md'
     - About: 'about.md'
+    # - BankDataBot: 'bankdatabot.md'
     - License: 'license.md'
     - Code Library: 'code.md'
     - Data Library: 'datalibrary.md'
@@ -40,4 +41,4 @@ extra:
     provider: google
     property: G-YLGYYYELXL
     
-copyright: Copyright &copy; 2022 Civic Objective Solutions LLC
+copyright: <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>

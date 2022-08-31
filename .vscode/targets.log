@@ -6,12 +6,16 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Wed Jul 27 15:23:46 2022
+
+# Make data base, printed on Wed Aug 17 11:24:57 2022
 
 # Variables
 
 # automatic
+ 
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
@@ -38,17 +42,17 @@ INFOPATH = /opt/homebrew/share/info:
 # environment
 VSCODE_CWD = /
 # environment
-PATH = /Users/michael/opt/anaconda3/bin:/Users/michael/opt/anaconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin
+PATH = /Users/michael/opt/anaconda3/bin:/Users/michael/opt/anaconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/Library/Apple/usr/bin
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-LaunchInstanceID = 240DB1A5-6F67-41D9-903D-7DC02EB7C824
+LaunchInstanceID = B044E644-A4E1-4A73-9302-0DF1CC185341
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /var/folders/hl/9q3qlcv12qqbz952vftxxc8w0000gn/T//ssh-DopnAvkpUgdc/agent.4499
+SSH_AUTH_SOCK = /var/folders/hl/9q3qlcv12qqbz952vftxxc8w0000gn/T//ssh-4Bvjz2JR9A4p/agent.1048
 # automatic
 %F = $(notdir $%)
 # environment
@@ -58,7 +62,7 @@ PWD = /Users/michael/Development/call.report/public-docs
 # environment
 HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
-SSH_AGENT_PID = 4517
+SSH_AGENT_PID = 1058
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
@@ -70,7 +74,7 @@ HOME = /Users/michael
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/michael/Library/Application Support/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = /Users/michael/Library/Application Support/Code/CachedData/6d9b74a70ca9c7733b29f0456fd8195364076dda
 # environment
 LOGNAME = michael
 # environment
@@ -109,12 +113,13 @@ CONDA_SHLVL = 1
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # default
 .VARIABLES := 
+ 
 # environment
 TMPDIR = /var/folders/hl/9q3qlcv12qqbz952vftxxc8w0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/michael/Library/Application Support/Code/1.69.2-main.sock
+VSCODE_IPC_HOOK = /Users/michael/Library/Application Support/Code/1.70.1-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -124,7 +129,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.30225463.30225469
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.34759165.34759171
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -148,7 +153,7 @@ LC_ALL = C
 # environment
 CONDA_PYTHON_EXE = /Users/michael/opt/anaconda3/bin/python
 # environment
-SECURITYSESSIONID = 186ae
+SECURITYSESSIONID = 186b2
 # automatic
 ^F = $(notdir $^)
 # default
@@ -162,7 +167,7 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /Users/michael/opt/anaconda3
 # environment
-VSCODE_PID = 3985
+VSCODE_PID = 639
 # environment
 _CE_CONDA = 
 # environment
@@ -176,7 +181,7 @@ LANG = C
 
 # Directories
 
-# . (device 16777230, inode 25816721): 9 files, no impossibilities.
+# . (device 16777232, inode 25816721): 9 files, no impossibilities.
 
 # 9 files, no impossibilities in 1 directories.
 
@@ -208,6 +213,7 @@ Makefile:
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
@@ -237,8 +243,6 @@ run:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Jul 27 15:23:46 2022
+# Finished Make data base on Wed Aug 17 11:24:57 2022
 
  
-make: *** No rule to make target `all'.  Stop.
-
