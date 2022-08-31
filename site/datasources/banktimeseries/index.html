@@ -15,7 +15,7 @@
     
     
       
-        <title>Bank Time Series Regulatory Data - Call.Report: A Resource for Bank Regulatory Analysis</title>
+        <title>Bank Time Series Regulatory Data - Call.Report: A Resource for Bank and Holding Company Regulatory Data</title>
       
     
     
@@ -96,7 +96,7 @@
 
 <header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Call.Report: A Resource for Bank Regulatory Analysis" class="md-header__button md-logo" aria-label="Call.Report: A Resource for Bank Regulatory Analysis" data-md-component="logo">
+    <a href="../.." title="Call.Report: A Resource for Bank and Holding Company Regulatory Data" class="md-header__button md-logo" aria-label="Call.Report: A Resource for Bank and Holding Company Regulatory Data" data-md-component="logo">
       
   <img src="../../assets/images/call_report_icon_v1.png" alt="logo">
 
@@ -108,7 +108,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Call.Report: A Resource for Bank Regulatory Analysis
+            Call.Report: A Resource for Bank and Holding Company Regulatory Data
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -181,12 +181,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Call.Report: A Resource for Bank Regulatory Analysis" class="md-nav__button md-logo" aria-label="Call.Report: A Resource for Bank Regulatory Analysis" data-md-component="logo">
+    <a href="../.." title="Call.Report: A Resource for Bank and Holding Company Regulatory Data" class="md-nav__button md-logo" aria-label="Call.Report: A Resource for Bank and Holding Company Regulatory Data" data-md-component="logo">
       
   <img src="../../assets/images/call_report_icon_v1.png" alt="logo">
 
     </a>
-    Call.Report: A Resource for Bank Regulatory Analysis
+    Call.Report: A Resource for Bank and Holding Company Regulatory Data
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -214,7 +214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/" class="md-nav__link">
+      <a href="../../about.md" class="md-nav__link">
         About
       </a>
     </li>
@@ -798,9 +798,17 @@
 <h1 id="bank-time-series-regulatory-data">Bank Time Series Regulatory Data</h1>
 <h2 id="about">About</h2>
 <h3 id="time-series-frequency">Time Series Frequency</h3>
-<p>Most all public bank regulatory data is time series data with a quarterly frequency. Some data, particularly for smaller financial institutions' data is semi-annual. </p>
+<p>Most all public bank regulatory data is time series data with a quarterly reporting frequency. Some data, particularly for smaller financial institutions' data is semi-annual. </p>
 <h3 id="publishing-frequency">Publishing frequency</h3>
-<p>Regulatory agencies receive data on a rolling basis. Bulk data downloads are updated approximately monthly, while "webservice" feeds are updated soon after bank regulatory filings are submitted and validated.</p>
+<p>Regulatory agencies receive data on a rolling basis. </p>
+<ul>
+<li>
+<p>Bulk data downloads are updated approximately monthly</p>
+</li>
+<li>
+<p>"Webservice" feeds are updated soon after bank regulatory filings are submitted and validated. (A Python-based wrapper for these feeds is available at https://pypi.org/project/ffiec-data-connect)</p>
+</li>
+</ul>
 <h3 id="data-fields-and-data-dictionaries">Data Fields and Data Dictionaries</h3>
 <p>Time series are published by field name (an "MDRM"), the ID of the reporting institution, and the reporting date (typically quarterly). </p>
 <p>The data release date is not included in the datasets themselves, but can be inferred from the data publication data.</p>
@@ -939,12 +947,9 @@
 <div class="md-copyright">
     
       <div class="md-copyright__highlight">
-        Copyright &copy; 2022 Civic Objective Solutions LLC
-        <a href="license">
-        <span style="margin-left:1em;">License</span>
-        </a>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
       </div>
-      
+    
     
     
       Made with

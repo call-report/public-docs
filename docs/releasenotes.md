@@ -28,3 +28,17 @@ Added repo and reference for the [Universal Data Collector](https://github.com/c
 
 - Added the `ffiec-data-connect` package
 - Minor edits
+
+### August 13, 2022
+
+- Added info on BankDataBot
+
+### August 14, 2022
+
+ - Added more info on BankDataBot
+ - Updated index table of contents
+
+### Aug 31, 2022
+
+- Due to time limitations, BankDataBot will be on hold for now.
+- Changed from MIT License to CC BY 4.0 license to remove copyright
